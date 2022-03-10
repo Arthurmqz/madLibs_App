@@ -19,3 +19,21 @@ console.log(userStory)
 //Third part - Number of unique replacements
 
 let numberOfQuestions = 10
+
+// Fourth part - Question
+
+window.prompt(“argumento1”, [“argumento2”]);
+function addUserInput() {
+  let questionArray = prompt(
+    'Qual objeto você deseja incluir na lista?',
+    'Adicione um novo objeto'
+  )
+  if (questionArray == null || questionArray == '') {
+    alert('O uso do prompt foi cancelado!')
+  } else {
+    let questionArray = userInputs('itens')
+    var option = document.createElement('option')
+    option.text = questionArray
+    itens.add(option, itens[0])
+  }
+}
